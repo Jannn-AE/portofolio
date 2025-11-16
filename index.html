@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Ahmad Fauzan Rajendra</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <div class="logo-icon">Portfolio</div>
+            <div>Ahmad Fauzan Rajendra
+                <p>Backend Developer</p>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>Ahmad Fauzan Rajendra</h1>
+            <p>Web Developer</p>
+        </div>
+    </header>
+
+    <section id="home" class="profile-section">
+        <div class="container">
+            <img src="images/zan.png" alt="Foto Profil" class="profile-img">
+            <div class="about-me">
+                <h2>Tentang Saya</h2>
+                <p>
+                    Lulusan Teknik Informatika dengan fokus pada pengembangan backend aplikasi web. 
+                    Terampil menggunakan PHP dan MySQL untuk membangun sistem berbasis CRUD, autentikasi user, 
+                    validasi input, serta pengelolaan relasi antar tabel. Berpengalaman dalam merancang dan mengembangkan 
+                    sistem informasi administrasi sekolah yang terintegrasi, mencakup modul data siswa, guru, jadwal, absensi, nilai, dan pengumuman.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Proyek Saya</h2>
+            <div class="projects-grid">
+                <div class="project-card" onclick="openModal(0)">
+                    <img src="images/indexSMA12.png" alt="Project 1" class="project-img">
+                    <div class="project-info">
+                        <h3>Perancangan Sistem Informasi Administrasi Sekolah pada SMA Muhammadiyah 12 Jakarta</h3>
+                        <p>
+                            Mengembangkan aplikasi berbasis web menggunakan bahasa pemrograman PHP 
+                            untuk mengelola data sekolah secara terintegrasi, mencakup pengelolaan 
+                            data siswa, guru, kelas, jadwal pelajaran, presensi, dan nilai.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openModal(1)">
+                    <img src="images/indexPakar.png" alt="Project 2" class="project-img">
+                    <div class="project-info">
+                        <h3>Sistem Pakar Diagnosa Kerusakan Sepeda Motor Matic Injeksi Menggunakan Metode Forward Chaining pada Bengkel Butong</h3>
+                        <p>
+                            Membangun aplikasi sistem pakar berbasis web menggunakan bahasa pemrograman PHP 
+                            yang berfungsi untuk membantu pengguna dalam mendiagnosis kerusakan pada sepeda motor 
+                            matic injeksi berdasarkan gejala yang terdeteksi. Sistem ini menerapkan metode forward 
+                            chaining untuk melakukan penelusuran aturan dan menentukan jenis kerusakan serta solusi perbaikannya.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openModal(2)">
+                    <img src="images/indexAPI.png" alt="Project 3" class="project-img">
+                    <div class="project-info">
+                        <h3>MyMoney API</h3>
+                        <p>
+                            Membangun RESTful API untuk pengelolaan keuangan pribadi menggunakan Laravel dan MySQL. 
+                            Mengimplementasikan autentikasi token, CRUD kategori dan transaksi, filtering data (tipe, tanggal, kategori). 
+                            Menyusun dokumentasi dan melakukan pengujian API dengan Postman.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="slide-counter">
+                <span id="currentSlide">1</span> / <span id="totalSlides">3</span>
+            </div>
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <img id="modalImg" class="modal-img">
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>Keterampilan</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>HTML & CSS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>PHP</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>Laravel</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>UI Design</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 60%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>Git & GitHub</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 50%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>Web Development</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>Back End Development</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="content-wrapper">
+            <h2>Hubungi Saya</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Nama Anda" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email Anda" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Pesan Anda" required></textarea>
+                </div>
+                <button type="submit" class="contact-btn">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Portofolio. Ahmad Fauzan Rajendra.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Data proyek dengan multiple images
+        const projects = [
+            {
+                name: "Sistem Informasi Administrasi Sekolah",
+                images: [
+                    "images/dashboardSMA12.png",
+                    "images/siswaSMA12.png",
+                    "images/guruSMA12.png",
+                    "images/matpelSMA12.png",
+                    "images/kelasSMA12.png",
+                    "images/presensiSMA12.png",
+                    "images/nilaiSMA12.png"
+                ]
+            },
+            {
+                name: "Sistem Pakar Kerusakan Sepeda Motor Matic Injeksi",
+                images: [
+                    "images/loginPakar.png",
+                    "images/adminPakar.png",
+                    "images/gejalaPakar.png",
+                    "images/kerusakanPakar.png",
+                    "images/aturanPakar.png",
+                    "images/riwayatPakar.png",
+                    "images/userPakar.png",
+                    "images/infoPakar.png",
+                    "images/formPakar.png",
+                    "images/hasilPakar.png"
+                ]
+            },
+            {
+                name: "MyMoney API",
+                images: [
+                    "images/transaksiAPI.png",
+                    "images/filteringAPI.png",
+                    "images/todayAPI.png",
+                    "images/budgetAPI.png",
+                    "images/limitAPI.png"
+                ]
+            }
+        ];
+
+        let currentProjectIndex = 0;
+        let currentImageIndex = 0;
+
+        // Fungsi untuk membuka modal
+        function openModal(projectIndex) {
+            currentProjectIndex = projectIndex;
+            currentImageIndex = 0;
+            document.getElementById('myModal').style.display = 'block';
+            updateModalImage();
+        }
+
+        // Fungsi untuk menutup modal
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
+
+        // Fungsi untuk mengubah slide
+        function changeSlide(direction) {
+            const totalImages = projects[currentProjectIndex].images.length;
+            currentImageIndex += direction;
+
+            if (currentImageIndex >= totalImages) {
+                currentImageIndex = 0;
+            } else if (currentImageIndex < 0) {
+                currentImageIndex = totalImages - 1;
+            }
+
+            updateModalImage();
+        }
+
+        // Fungsi untuk update gambar di modal
+        function updateModalImage() {
+            const project = projects[currentProjectIndex];
+            document.getElementById('modalImg').src = project.images[currentImageIndex];
+            document.getElementById('currentSlide').textContent = currentImageIndex + 1;
+            document.getElementById('totalSlides').textContent = project.images.length;
+        }
+
+        // Fungsi untuk kirim pesan
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah terkirim melalui email.');
+            this.reset();
+        });
+
+        // Menutup modal ketika klik di luar gambar
+        window.onclick = function(event) {
+            const modal = document.getElementById('myModal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+
+        // Keyboard navigation untuk modal
+        document.addEventListener('keydown', function(event) {
+            const modal = document.getElementById('myModal');
+            if (modal.style.display === 'block') {
+                if (event.key === 'ArrowLeft') {
+                    changeSlide(-1);
+                } else if (event.key === 'ArrowRight') {
+                    changeSlide(1);
+                } else if (event.key === 'Escape') {
+                    closeModal();
+                }
+            }
+        });
+
+        // Highlight menu saat scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        window.addEventListener('scroll', () => {
+        let current = '';
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 100; // jarak sedikit di atas section
+            const sectionHeight = section.clientHeight;
+            if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+            }
+        });
+        });
+
+        // Smooth scroll untuk anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
